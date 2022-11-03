@@ -1,0 +1,94 @@
+.datatable{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .top{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.5);
+        box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.5);
+        padding: 10px;
+
+        .title{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #000034;
+        }    
+
+        .link{
+            font-size: 14px;
+            text-decoration: none;
+            color: green;
+            border: 1px solid green;
+            padding: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    }
+
+    .toast{
+        background-color: rgba(255, 0, 0, 0.5);
+        font-size: 16px;
+        font-weight: bold;
+        width: fit-content;
+        text-align: center;
+        padding: 10px;
+        color: white;
+        margin-bottom: 10px;
+        border-radius: 5PX;
+    }
+
+    .table{
+        width: 100%;
+        border: 1px solid #000034;
+        border-collapse: collapse;
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.5);
+        box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.5);
+        padding: 10px;
+
+        th{
+            border: 1px solid #000034;
+            text-align: left;
+            height: 3rem;
+            padding:0 5px;
+        }
+
+        td{
+            border: 1px solid #000034;
+            text-align: left;
+            height: 2rem;
+            padding:0 5px;
+        }
+    }
+
+    .cellAction{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .viewButton{
+            padding: 2px 5px;
+            border-radius: 5px;
+            font-weight: bold;
+            color: darkblue;
+            background-color: rgba(0, 0, 139, 0.5);
+        }
+
+        .deleteButton{
+            padding: 2px 5px;
+            font-weight: bold;
+            border-radius: 5px;
+            color: red;
+            background-color: rgba(255, 0, 0, 0.493);
+            cursor: pointer;
+        }
+    }
+}

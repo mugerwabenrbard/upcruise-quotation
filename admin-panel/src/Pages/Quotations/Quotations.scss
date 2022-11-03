@@ -1,0 +1,246 @@
+.quotations{
+    display: flex;
+    width: 100%;
+
+    .quotationsContainer{
+        flex: 6;
+        width: 100%;
+    }
+}
+
+.newQuotation{
+    display: flex;
+    width: 100%;
+
+    .newQuotationContainer{
+        flex: 6;
+
+        .top{
+            h1{
+                font-weight: bold;
+                color: gray;
+                font-size: 25px;
+            }
+        }
+
+        flex: 6;
+        width: 100%;
+        padding: 20px;
+
+        .bottom{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .wrapper{
+                display: flex;
+                flex-wrap: wrap;
+                width: 90%;
+                gap: 30px;
+                justify-content: flex-start;
+
+                .formInput{
+                    width: 40%;
+                    margin: 10px 0;
+
+                    label{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    }
+
+                    input{
+                        width: 100%;
+                        padding: 5px;
+                        border: none;
+                        border-bottom: 1px solid lightgray;
+                    }
+
+                    textarea{
+                        width: 100%;
+                        padding: 5px;
+                        border: none;
+                        border: 1px solid lightgray;
+                        border-radius: 5px;
+                    }
+
+                }
+
+                .tripDetails{
+                    width: 100%;
+                    gap: 20px;
+                    border: 1px solid #000034;
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+
+                    .row{
+                        display: flex;
+                        gap: 30px;
+                    }
+
+                    .removeRow{
+                        background-color: red;
+                        border: none;
+                        padding: 5px;
+                        border-radius: 5px;
+                        align-items: flex-end;
+                        color: white;
+                        font-weight: bold;
+                        width: 100px;
+                        cursor: pointer;
+                        text-align: center;
+                        margin-top: 10px;
+                    }
+                }
+
+                .bottom{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    width: 100%;
+
+                    .addrow{
+                        background-color: green;
+                        border: none;
+                        padding: 5px;
+                        border-radius: 5px;
+                        align-items: flex-end;
+                        color: white;
+                        font-weight: bold;
+                        width: 100px;
+                        cursor: pointer;
+                        text-align: center;
+                    }
+                }
+            }
+            .submit{
+                width: 510px;
+                padding: 10px;
+                border: none;
+                background-color: goldenrod;
+                color: white;
+                cursor: pointer;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.singleQuotation{
+    display: flex;
+
+    .singleQuotationContainer{
+        flex: 6;
+        width: 100%;
+    }
+}
+
+.printQuotation{
+    display: flex;
+
+    .printQuotationContainer{
+        flex: 6;
+
+        .printArea{
+            padding: 20px;
+            
+            .buttons{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0px 20px;
+            }
+            .print{
+                padding: 5px 10px;
+                border: none;
+                color: green;
+                background-color: rgba(0, 128, 0, 0.5);
+                border-radius: 5px;
+                font-weight: bold;
+                font-size: 16px;
+                margin-bottom: 10px;
+                cursor: pointer;
+            }
+
+            .printing{
+                margin: 30px;
+                .header{
+                    .img{
+                        margin: 40px;
+                        width: fit-content;
+                    }
+                }
+                .body{
+                    .contactDetails{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        .left, .right{
+                            p{
+                                margin-bottom: 10px;
+                                font-weight: bold;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    .tripDetails{
+                        h1{
+                            text-align: center;
+                            margin-bottom: 10px;
+                        }
+                        .table{
+                            width: 100%;
+                            border: 2px solid #000034;
+                            border-collapse: collapse;
+                            -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.5);
+                            box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.5);
+                            padding: 10px;
+                            margin-bottom: 10px;
+                    
+                            th{
+                                border: 2px solid #000034;
+                                text-align: left;
+                                height: 3rem;
+                                padding:0 5px;
+                            }
+                    
+                            td{
+                                border: 2px solid #000034;
+                                text-align: left;
+                                height: 2rem;
+                                padding:0 5px;
+                            }
+                        }
+                        .terms{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            .termsLeft, .termsRight{
+                                .termsTitle{
+                                    font-weight: bold;
+                                    font-size: 16px;
+                                }
+                                p{
+                                    margin-bottom: 10px;
+                                }
+                                .subTotal, .tax, .total{
+                                    font-weight: bold;
+                                }
+                                .total{
+                                    font-size: 22px;
+                                }
+
+                                .tax, .subTotal{
+                                    span{
+                                        font-weight: 400;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
